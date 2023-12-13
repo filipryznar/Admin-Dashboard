@@ -1,3 +1,9 @@
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 .container {
   display: grid;
   height: 100vh;
@@ -6,14 +12,91 @@
   background-color: aqua;
 }
 .sidebar {
-  background-color: blue;
+  background-color: #1992d4;
   grid-area: 1/1/ 3/2;
+  display: grid;
+  align-content: start;
+  gap: 3rem;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  padding-right: 0.5rem;
 }
 .header {
-  background-color: white;
+  background-color: #ffffff;
   grid-area: 1/2/ 2/3;
 }
-.content {
-  background-color: lightgray;
+.main-content {
+  background-color: #e2e8f0;
   grid-area: 2/2/ 3/3;
+}
+
+.home ul,
+.settings ul {
+  padding: 0px;
+  margin: 0px;
+}
+.home li,
+.settings li {
+  list-style-type: none;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+.logo-container img {
+  padding: 0px;
+}
+.home,
+.settings {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+.profile-pic {
+  width: 4rem;
+}
+
+.top-header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 7fr 1fr 1fr 1fr;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.search {
+  display: flex;
+  /* grid-auto-flow: column;
+  justify-content: start;
+  align-items: center; */
+  gap: 0.5rem;
+  padding-right: 1rem;
+}
+.search input {
+  flex: 1;
+  background-color: #e2e8f0;
+  border-radius: 16px;
+  border: none;
+}
+
+.ring {
+  justify-self: end;
+}
+.profile-pic {
+  justify-self: center;
+}
+.user-name {
+  justify-self: start;
 }
