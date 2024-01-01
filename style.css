@@ -221,6 +221,90 @@ button {
 }
 .announcements {
   grid-area: 1/2/2/3;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
+
+.a-cards {
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1.5rem 0px 1.5rem 0px;
+}
+
+/* .rest-of-card {
+  padding: 1.5rem;
+  display: grid;
+} */
+
+.head-a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.a-cards .title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-bottom: 4px;
+  padding: 0px 1.5rem 4px 1.5rem;
+}
+
+.a-cards p {
+  margin: 0px;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  padding: 0px 0px 4px 1.5rem;
+}
+.line {
+  border-top: solid 1px lightgrey;
+  padding: 0px 1rem 0rem 0.8rem;
+  margin-top: 1rem;
+  margin: 1rem;
+}
+
 .trending {
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  grid-area: 2/2/3/3;
+}
+.t-cards {
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1rem 1.5rem 1rem 1.1rem;
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.head-t {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.trending-lines {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-pic-small {
+  width: 45px;
+}
+.at-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: grid;
+  align-content: center;
+}
+.at-name p {
+  margin-block: 0px;
+}
+.trending-project {
+  font-size: 0.8rem;
+  font-weight: 100;
 }
